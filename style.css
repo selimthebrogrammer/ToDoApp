@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(30, 41, 87);
+}
+
+.wrapper {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+}
+.toDo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 600px;
+        border: 2px solid;
+        border-color: #fff;
+        border-radius: 10px;
+        box-shadow: 20px 20px 15px rgba(253, 253, 253, 0.1);
+
+}
+
+#title {
+        margin-top: 22px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 55px;
+        color: #fff;
+        position: absolute;
+}
+
+.search-add {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 110px;
+}
+
+
+input {
+        display: flex;
+        width: 80%;
+        height: 44px;
+        border: none;
+        border-radius: 10px;
+        z-index: 0;
+        margin-left: 50px;
+        text-align: center;
+        outline: none;
+        font-size: 22px;
+
+
+}
+
+i {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        z-index: 1;
+        margin-left: 65px;
+}
+
+.buttons {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        justify-content: space-around;
+        align-items: center;
+
+}
+
+button {
+        width: 88px;
+        height: 33px;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        font-weight: bold;
+}
+
+.toDo-List {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 88%;
+        height: 350px;
+       
+}
+
+.toDo-List>#listed input {
+        display: flex;
+        width: 22px;
+        height: 22px;
+        margin-left: -50px;
+        margin-top: 10px;
+        background-color: #fff;
+}
+
+.toDo-List>#listed label {
+        display: flex;
+        width: 100%;
+        height: 44px;
+        background-color: #fff;
+        padding: 10px;
+        align-items: center;
+        font-size: 22px;
+}
+
+.toDo-List>div {
+        margin-left: 60px;
+        display: flex;
+        width: 60%;
+        height: 44px;
+        background-color: #fff;
+}
+
+.toDo-List>#listed {
+        display: flex;
+        width: 350px;
+        height: 44px;
+        border-radius: 15px;
+        gap: 5px;
+        pointer-events:stroke;
+}
+
+#alert {
+        width: 300px;
+        color: #fff;
+        height: 5px;
+        position: absolute;
+        margin-top: 600px;
+        margin-left: 100px;
+
+}
